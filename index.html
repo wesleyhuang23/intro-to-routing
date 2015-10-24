@@ -1,11 +1,20 @@
-<html>
+<html ng-app="app">
 	<body>
-	something
+	<p>Before the ng-view</p>
+        
+    <div ng-view>
+        <!--Route templates will replace this-->    
+    </div>  
+        
+    <p>After the ng-view</p>
+        
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://code.angularjs.org/1.4.3/angular-route.js"></script>
 		<script src="app/app.js"></script>
 		<script src="app/ListController.js"></script>
 		<script src="app/DataService.js"></script>
 		<script src="app/DetailsController.js"></script>
 		<script src="app/SettingsController.js"></script>
+        <script src="app/AdminController.js"></script>
 	</body>
 <html>
