@@ -1,7 +1,17 @@
-<html>
+<html ng-app="app">
 	<body>
-	something
+
+	<a ui-sref='home'>HOME</a>
+	<a ui-sref="details">DETAILS</a>
+
+	<br>
+	<br>
+
+
+	<div ui-view></div>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="app/app.js"></script>
 		<script src="app/ListController.js"></script>
 		<script src="app/DataService.js"></script>
